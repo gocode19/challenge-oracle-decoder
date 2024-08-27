@@ -25,3 +25,16 @@ function descifrarTexto(){
     }
 }
 
+let btnEn = document.getElementsByClassName('btn-encripta');
+btnEn.addEventListener('click',codificar);
+function codificar(){
+    texto = document.getElementsByClassName('area-text').value;
+    let textoCifrado = texto
+                            .replace(/ain/gi, 'a')
+                            .replace(/enter/gi, 'e')
+                            .replace(/imes/gi, 'i')
+                            .replace(/ober/gi, 'o')
+                            .replace(/ufat/gi, 'u');
+    document.getElementsById('desencripta').innerHTML = textoCifrado;
+
+}
