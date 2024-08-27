@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4c240f81dc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <title>Encriptador de Texto</title>
+</head>
+
+<body>
+    <header>
+        <!-- Logo de Alura Latam -->
+        <div class="logo">
+            <img src="./assets/logo.svg" alt="Logo de Alura Latam">
+        </div>
+    </header>
+    <main>
+        <section>
+            <!-- Área para ingresar el texto a encriptar o desencriptar -->
+            <form action="#" class="area-encripta">
+                <textarea name="encriptador" id="encriptar" class="area-text"
+                    placeholder="Ingrese el texto aquí"></textarea>
+                <div class="acciones-texto">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    <span>Sólo letras minúsculas y sin acentos</span>
+                    <div class="buttons-encripta">
+                        <button 
+                       type="button" onclick="cifrarTexto()" class="btn btn-encripta">Encriptar</button>
+                        <button type="button" onclick="descifrarTexto()" class="btn btn-desencripta">Desencriptar</button>
+                    </div>
+                </div>
+            </form>
+            <!-- Área para mostrar el resultado del texto encriptado o desencriptado -->
+            <form action="#" class="area-resultado">
+                <img class="persona" src="./assets/muñeco.png" alt="Persona con lupa buscando un diamante">
+                <!-- <textarea name="texto-resultado" id="desencripta"></textarea> -->
+                <h2>Ningun mensaje fue encontrado</h2>
+                <p class="mensaje-final">Ingresa el texto que desees encriptar o desencriptar</p>
+                <div>
+                    <button class="btn btn-copiar ocultar">Copiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <script src="./scripts/script.js"></script>
+</body>
+
+</html>
